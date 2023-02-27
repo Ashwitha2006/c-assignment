@@ -1,0 +1,25 @@
+#include<stdio.h>
+main()
+{
+	int n, sum=0, h, r, ssum=0;
+	printf("enter any number");
+	scanf("%d", &n);
+	while(n>0)
+	{
+		r = n%10;
+		sum = sum+r;
+		n = n/10;
+	}
+	if(sum<=10)
+	printf("%d", sum);
+	else
+	{
+    while(sum>0)
+    {
+	r = sum%10;
+	ssum = ssum+r;
+	sum =sum/10;
+	printf("%d", ssum);
+   }
+   }
+}
